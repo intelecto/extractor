@@ -6,7 +6,7 @@
 
 [![Build Status](https://travis-ci.org/intelecto/extractor.svg)](https://travis-ci.org/intelecto/extractor)
 [![codecov](https://codecov.io/gh/intelecto/extractor/branch/master/graph/badge.svg)](https://codecov.io/gh/intelecto/extractor) 
-   
+
 Pré requisitos
 -------
 
