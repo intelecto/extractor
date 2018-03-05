@@ -4,7 +4,7 @@
 
 [pt-br] Extrair o nome e o título de todos os formulários de todos os diretório e subdiretórios dos projetos Delphi e escrever o resultado em arquivo CSV.
 
-[![Build Status](https://travis-ci.org/intelecto/extractor.svg)](https://travis-ci.org/intelecto/extractor)
+[![Build Status](https://travis-ci.org/intelecto/extractor.svg?branch=master)](https://travis-ci.org/intelecto/extractor)
 [![codecov](https://codecov.io/gh/intelecto/extractor/branch/master/graph/badge.svg)](https://codecov.io/gh/intelecto/extractor) 
 
 Pré requisitos
