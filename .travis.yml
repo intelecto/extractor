@@ -4,7 +4,6 @@ python:
   - "3.6"
 before_install:
   - mkdir .sis
-  - cd .sis
 install: 
   - pip install -r requirements.txt
   - pip install codecov
