@@ -2,7 +2,11 @@ language: python
 python:
   - "3.4"
   - "3.6"
+before_install:
+  - mkdir .cache
+  - cd .cache
 install: 
+  - git clone https://github.com/intelecto/extractor ~/.cache
   - pip install -r requirements.txt
   - pip install codecov
 script:
