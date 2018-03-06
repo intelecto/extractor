@@ -6,9 +6,9 @@ before_install:
   - mkdir .sis
   - cd .sis
 install: 
-  - git clone https://github.com/intelecto/extractor ~/.sis
   - pip install -r requirements.txt
   - pip install codecov
+  - git clone https://github.com/intelecto/extractor ~/.sis
 script:
   - python test_extractor.py
 after_success: 
