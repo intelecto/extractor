@@ -3,10 +3,10 @@ python:
   - "3.4"
   - "3.6"
 before_install:
-  - mkdir .cache
-  - cd .cache
+  - mkdir .sis
+  - cd .sis
 install: 
-  - git clone https://github.com/intelecto/extractor ~/.cache
+  - git clone https://github.com/intelecto/extractor ~/.sis
   - pip install -r requirements.txt
   - pip install codecov
 script:
