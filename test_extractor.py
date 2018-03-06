@@ -40,13 +40,13 @@ class TestCase(unittest.TestCase):
         self.assertTrue(result == 'Atenção')
 
     # integrated 
-    def test_findFiles(self):
-        self.extract.findFiles()
-        self.assertTrue(len(self.extract.formList.items()) > 0)
+    #def test_findFiles(self):
+    #    self.extract.findFiles()
+    #    self.assertTrue(len(self.extract.formList.items()) > 0)
     
-    def test_saveCSV(self):
-        self.extract.saveCSV()
-        self.assertTrue(os.path.isfile('result.csv'))
+    #def test_saveCSV(self):
+    #    self.extract.saveCSV()
+    #    self.assertTrue(os.path.isfile('result.csv'))
 
 if __name__ == '__main__':
     unittest.main()
