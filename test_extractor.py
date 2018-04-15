@@ -6,6 +6,7 @@ import os.path
 # https://docs.python.org/3/library/unittest.mock-examples.html
 # https://www.toptal.com/python/an-introduction-to-mocking-in-python
 
+
 class TestCase(unittest.TestCase):
 
     def setUp(self):
@@ -25,6 +26,10 @@ class TestCase(unittest.TestCase):
         self.extract.formList = {}
         if os.path.isfile('result.csv'):
             os.remove('result.csv')
+
+        # create mocks com as pastas e arquivos
+
+
 
     # isolated tests
     def test_isolated_onlyFormname(self):
@@ -144,7 +149,6 @@ class TestCase(unittest.TestCase):
         self.assertTrue(result == 'ü')
 
     # integrated tests
-    """
     def test_findFiles(self):
         self.extract.findFiles()
         self.assertTrue(len(self.extract.formList.items()) > 0)
@@ -168,7 +172,6 @@ class TestCase(unittest.TestCase):
     def test_saveCSV(self):
         self.extract.saveCSV()
         self.assertTrue(os.path.isfile('result.csv'))
-    """
 
 if __name__ == '__main__':
     unittest.main()
