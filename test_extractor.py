@@ -22,6 +22,10 @@ class TestCase(unittest.TestCase):
         if os.path.isfile('result.csv'):
             os.remove('result.csv')
 
+        # create mocks com as pastas e arquivos
+
+
+
     # isolated tests
     def test_isolated_onlyFormname(self):
         result = self.extract.onlyFormname('VEN601E.dfm')
