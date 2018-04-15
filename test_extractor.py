@@ -2,10 +2,6 @@ import unittest
 import extractor
 import os.path
 
-# https://docs.python.org/3/library/unittest.mock.html
-# https://docs.python.org/3/library/unittest.mock-examples.html
-# https://www.toptal.com/python/an-introduction-to-mocking-in-python
-
 class TestCase(unittest.TestCase):
 
     def setUp(self):
@@ -69,7 +65,7 @@ class TestCase(unittest.TestCase):
 
     def test_isolated_fixFormCaption_224(self):
         result = self.extract.fixFormCaption('#224 Vista')
-        self.assertTrue(result == 'À Vista')
+        self.assertTrue(result == 'à Vista')
 
     def test_isolated_fixFormCaption_231_227(self):
         result = self.extract.fixFormCaption('Aten#231#227o')
@@ -83,7 +79,7 @@ class TestCase(unittest.TestCase):
         result = self.extract.fixFormCaption('#233')
         self.assertTrue(result == 'é')
 
-    def test_isolated_fixFormCaption_224(self):
+    def test_isolated_fixFormCaption_224_2(self):
         result = self.extract.fixFormCaption('#224')
         self.assertTrue(result == 'à')
 
@@ -144,7 +140,6 @@ class TestCase(unittest.TestCase):
         self.assertTrue(result == 'ü')
 
     # integrated tests
-    """
     def test_findFiles(self):
         self.extract.findFiles()
         self.assertTrue(len(self.extract.formList.items()) > 0)
@@ -168,7 +163,6 @@ class TestCase(unittest.TestCase):
     def test_saveCSV(self):
         self.extract.saveCSV()
         self.assertTrue(os.path.isfile('result.csv'))
-    """
 
 if __name__ == '__main__':
     unittest.main()
