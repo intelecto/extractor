@@ -5,10 +5,12 @@ python:
 install: 
   - pip install -r requirements.txt
   - pip install codecov
+  - git clone https://github.com/leogregianin/extractor.git
+  - cd extractor
 script:
   - python test_extractor.py
 after_success: 
   - coverage run test_extractor.py
   - codecov
 notifications:
-    email: true
+    email: false
