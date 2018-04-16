@@ -2,12 +2,9 @@ language: python
 python:
   - "3.4"
   - "3.6"
-before_install:
-  - mkdir .sis
 install: 
   - pip install -r requirements.txt
   - pip install codecov
-  - git clone https://github.com/intelecto/extractor ~/.sis
 script:
   - python test_extractor.py
 after_success: 
