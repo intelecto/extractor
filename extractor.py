@@ -108,10 +108,10 @@ class Extractor:
 if __name__ == "__main__":
     
     extract = Extractor()
-    extract.ROOT_DIR = '.\\SIS'
-    extract.EXCLUDE_DIRS = [r'.\SIS\ACBr', 
-                            r'.\SIS\SISMobile', 
-                            r'.\SIS\SISDLL'] 
+    extract.ROOT_DIR = 'C:\\SIS'
+    extract.EXCLUDE_DIRS = [r'C:\\SIS\\ACBr', 
+                            r'C:\\SIS\\SISMobile', 
+                            r'C:\\SIS\\SISDLL'] 
 
     extract.EXCLUDE_FILES_WITH = ['900A.dfm',
                                   'BARVERTICAL',

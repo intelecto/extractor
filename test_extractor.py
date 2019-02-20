@@ -6,7 +6,7 @@ class TestCase(unittest.TestCase):
 
     def setUp(self):
         self.extract = extractor.Extractor()
-        self.extract.ROOT_DIR = '.\\SIS'
+        self.extract.ROOT_DIR = 'C:\\SIS'
         self.extract.EXCLUDE_DIRS = [r'.\SIS\ACBr', 
                                      r'.\SIS\SISMobile', 
                                      r'.\SIS\SISDLL'] 
