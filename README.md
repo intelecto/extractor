@@ -16,6 +16,13 @@ Instalação das dependências
 $ pip install -r requirements.txt
 ```
 
+Extratores
+----------
+* extract.py: Extrair nome dos arquivos e nome dos formulários em todos os diretórios de todos os projetos.
+* forms.py: gerar instrução SQL para a partir do CSV gerado.
+* mysql_batch.py: extrair informações de uma tabela MySQL em batch-mode. 
+* mysql_line.py: extrair informações de uma tabela MySQL linha-a-linha.
+
 Executar
 -------
 
