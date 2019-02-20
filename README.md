@@ -1,8 +1,6 @@
 # Extractor
 
-[en] Extract the file name and form name of all forms from all directories and subdirectories of the Delphi projects and write to the CSV file.
-
-[pt-br] Extrair o nome e o título de todos os formulários de todos os diretório e subdiretórios dos projetos Delphi e escrever o resultado em arquivo CSV.
+Extrair informações de fontes de dados diversas para um arquivo CSV para análise de dados.
 
 [![Build Status](https://travis-ci.org/intelecto/extractor.svg?branch=master)](https://travis-ci.org/intelecto/extractor)
 
